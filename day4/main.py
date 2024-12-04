@@ -9,8 +9,15 @@ def insert_character_margin_on_data(data, margin=3):
 def find_string_in_data(data, string):
     pass
 
-def search_for_string_in_all_directions(data, string):
-    pass
+def search_for_string_in_all_directions(data, coordinates, string):
+    data = data.split('\n')
+    x, y = coordinates
+    if data[y][x] != string[0]:
+        return 0
+    for direction in range(8):
+        pass
+        
+    
     
 def solution1(data):
     print(insert_character_margin_on_data(data))
